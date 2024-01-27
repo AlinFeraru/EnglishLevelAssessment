@@ -1,0 +1,310 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+/*    background-color: blueviolet;*/
+    height: 50px;
+    text-align: right;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0 auto;
+    
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 20;
+}
+
+.mail{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+#about{
+    cursor: pointer;
+}
+
+#wrapper{
+    background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)), url("hero-img.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+#form-box{
+    background-color: transparent;
+    padding:1%;
+    top:20%;
+    position: center;
+    left:38%;
+}
+
+.choose-lang{
+    text-decoration: none;
+    color: black;
+    background-color:#fff;
+    margin-left: 30px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: monospace;
+/*    letter-spacing: 1.5px;*/
+/*    font-weight: 400;*/
+    transition: background-color 0.3s,border 0.2s, color 0.2s;
+	font-size: 40px;
+}
+
+.choose-lang:hover{
+    background-color: #0b8992;
+    color:white;
+    cursor: pointer;
+    width: 120px;
+}
+
+#language{
+    background-color:white;
+    padding:12px;
+    border-radius: 5px;
+    cursor:pointer;
+    border:2px solid black;
+	font-size: 30px;
+    
+}
+
+#language:hover{
+    background-color:white;
+	color:gray;
+}
+
+#language option{
+    background-color: #fff;
+    
+}
+
+.quiz{
+    background-color: white;
+    text-align: center;
+    padding-left: 10%;
+	padding-right: 10%;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+#info{
+    height:25px;
+    background-color: white;
+}
+
+#score{
+    width:50%;
+    float:left;
+    font-size: 25px;
+
+}
+
+#ques-left{
+    width:50%;
+    float:left;
+    font-size:25px;
+
+}
+
+#ques-view{
+    /*background-color:aqua;*/
+    height: 35px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.ques-circle{
+    float: left;
+    border-radius: 20%;
+    width: 20px;
+    height: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.correct{
+    background-color: #0b8992;
+	color: white
+}
+.incorrect{
+    background-color: #ffadad;
+    color: black;
+}
+
+.question{
+    background-color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    letter-spacing: .13em;
+	color: #0b8992;
+	float: left;
+	border-radius: 20%;
+	border: 5px solid #0b8992;
+	width: 100%;
+}
+
+.choice{
+    background-color: white;
+    padding: 1%;
+	padding-top: 20%
+
+}
+
+
+.options{
+    background-color: #0b8992;
+    display:block;
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: left;
+	color: white;
+}
+
+ input[type=radio] {
+     border: 5px solid #0b8992;
+     width: 40px;
+     height: 1.3em;
+     float: center;
+}
+
+.ans-btn{
+    background-color: #fff;
+    padding: 2%;
+	font-size: 40px;
+}
+
+.submit-answer{
+    background-color:white;
+    border: 2px solid #0b8992;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: monospace;
+    transition: background-color 0.3s,border 0.2s, color 0.2s;
+	font-size: 40px;
+}
+
+.submit-answer:hover{
+    
+    background-color: #0b8992;
+    padding: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.view-results{
+    text-decoration: none;
+    color: black;
+    background-color:white;
+    border: 2px solid #0b8992;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: monospace;
+    transition: background-color 0.3s,border 0.2s, color 0.2s;
+}
+
+.view-results:hover{
+    background-color: #0b8992;
+    padding: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/*Final Results*/
+
+.final-result{
+    background-color: #dbffd6;
+    text-align: center;
+    padding: 5px;
+    font-size: 2.1em;
+    height: 100vh;
+}
+.solved-ques-no{
+    padding: 10px;
+}
+
+.right-wrong{
+    padding: 10px;
+}
+
+#display-final-score{
+    padding: 5%;
+}
+.remark{
+    padding: 1%;
+	background-color: #0b8992;
+	color: white;
+}
+
+#logo{
+		height: 10%;
+		float: center;
+		position: float;
+		margin-top:-100px;
+		
+}
+
+#restart{
+    background-color:#0b8992;
+    /*margin-left: 30px;*/
+    border: 2px solid white;
+    padding: 35px;
+    border-radius: 20px;
+    font-size: 80%;
+	color: white;
+    transition: background-color 0.3s,border 0.2s, color 0.2s;
+}
+
+#restart:hover{
+    background-color: #0b8992;
+    color:#fff;
+    cursor: pointer;
+/*    width: 120px;*/
+    font-size: 90%;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .options{
+        margin-left: 8%
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .options{
+        margin-left: 4%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .options{
+        display: block;
+        margin-top: 3%;
+
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .options{
+        margin-top: 3%;
+
+    }
+    
+    .choose-lang{
+        display: block;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    
+    #language{
+        display: block;
+    }
+}
